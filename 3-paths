@@ -1,0 +1,4 @@
+cat > 3-paths << 'EOF'
+#!/bin/bash
+echo $PATH | tr ':' '\n' | wc -l
+EOF
