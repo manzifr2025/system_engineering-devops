@@ -1,0 +1,4 @@
+cat > 2-path << 'EOF'
+#!/bin/bash
+export PATH="$PATH:/action"
+EOF
