@@ -1,0 +1,4 @@
+cat > 1-hello_you << 'EOF'
+#!/bin/bash
+echo "hello $USER"
+EOF
