@@ -1,21 +1,8 @@
 #!/usr/bin/env bash
-# This script displays numbers from 1 to 20 and prints special messages
-# for 4, 9, and 17 using a while loop and case statement.
+# This script lists files in the current directory and prints the part after the first dash
 
-i=1
-while [ $i -le 20 ]
-do
-  echo "$i"
-  case $i in
-    4)
-      echo "bad luck from China"
-      ;;
-    9)
-      echo "bad luck from Japan"
-      ;;
-    17)
-      echo "bad luck from Italy"
-      ;;
-  esac
-  i=$((i + 1))
+for file in *; do
+  # Skip if file starts with a dot (hidden), but `*` already excludes hidden files
+  # Extract part after first dash
+  echo "${file#*-}"
 done
